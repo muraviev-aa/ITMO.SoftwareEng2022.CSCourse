@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E0B1904-A7C7-4B06-80C8-ECCD15298CBE}</ProjectGuid>
+    <ProjectGuid>{A6993A31-7013-4080-AD72-47EF0C5BC76C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ITMO.CSCourse2022.Bank</RootNamespace>
-    <AssemblyName>ITMO.CSCourse2022.Bank</AssemblyName>
+    <RootNamespace>ITMO.CSCourse2022.Lab7.Excercise2</RootNamespace>
+    <AssemblyName>ITMO.CSCourse2022.Lab7.Excercise2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountType.cs" />
-    <Compile Include="BankAccount.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

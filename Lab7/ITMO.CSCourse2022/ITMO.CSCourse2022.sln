@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Lab7.Excercise1", "ITMO.CSCourse2022.Lab7.Excercise1\ITMO.CSCourse2022.Lab7.Excercise1.csproj", "{A2CDBDBE-B79E-4237-8309-BDC08EE9D742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Lab7.Excercise2", "ITMO.CSCourse2022.Lab7.Excercise2\ITMO.CSCourse2022.Lab7.Excercise2.csproj", "{A6993A31-7013-4080-AD72-47EF0C5BC76C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2CDBDBE-B79E-4237-8309-BDC08EE9D742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CDBDBE-B79E-4237-8309-BDC08EE9D742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CDBDBE-B79E-4237-8309-BDC08EE9D742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CDBDBE-B79E-4237-8309-BDC08EE9D742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6993A31-7013-4080-AD72-47EF0C5BC76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6993A31-7013-4080-AD72-47EF0C5BC76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6993A31-7013-4080-AD72-47EF0C5BC76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6993A31-7013-4080-AD72-47EF0C5BC76C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05213714-AA08-4276-BFD2-72D54A7CFB9D}
+	EndGlobalSection
+EndGlobal

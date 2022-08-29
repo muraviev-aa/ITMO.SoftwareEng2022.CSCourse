@@ -1,7 +1,0 @@
-﻿
-    enum AccountType
-    {
-        Checking,
-        Deposit
-    }
-
