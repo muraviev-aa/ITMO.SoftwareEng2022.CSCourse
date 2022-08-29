@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Exercise1", "ITMO.CSCourse2022.Exercise1\ITMO.CSCourse2022.Exercise1.csproj", "{508B1280-CB91-4256-B6BB-B52E16896E53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Lab6.Exercise3", "ITMO.CSCourse2022.Lab6.Exercise3\ITMO.CSCourse2022.Lab6.Exercise3.csproj", "{736CB32E-D2AE-452B-9B8B-F0BDCF426D25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Exercise2", "ITMO.CSCourse2022.Exercise2\ITMO.CSCourse2022.Exercise2.csproj", "{E28FE625-5EC2-40A8-A859-CB144CAB8D0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Lab6.Exercise1", "ITMO.CSCourse2022.Lab6.Exercise1\ITMO.CSCourse2022.Lab6.Exercise1.csproj", "{F6ED69D4-EEBC-40B2-8014-773BE4C2BF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSCourse2022.Lab6.Exercise2", "ITMO.CSCourse2022.Lab6.Exercise2\ITMO.CSCourse2022.Lab6.Exercise2.csproj", "{39C51BC4-30B1-42EC-AE23-7FE940A2189C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{508B1280-CB91-4256-B6BB-B52E16896E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{508B1280-CB91-4256-B6BB-B52E16896E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{508B1280-CB91-4256-B6BB-B52E16896E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{508B1280-CB91-4256-B6BB-B52E16896E53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E28FE625-5EC2-40A8-A859-CB144CAB8D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E28FE625-5EC2-40A8-A859-CB144CAB8D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E28FE625-5EC2-40A8-A859-CB144CAB8D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E28FE625-5EC2-40A8-A859-CB144CAB8D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736CB32E-D2AE-452B-9B8B-F0BDCF426D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736CB32E-D2AE-452B-9B8B-F0BDCF426D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736CB32E-D2AE-452B-9B8B-F0BDCF426D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736CB32E-D2AE-452B-9B8B-F0BDCF426D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6ED69D4-EEBC-40B2-8014-773BE4C2BF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6ED69D4-EEBC-40B2-8014-773BE4C2BF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6ED69D4-EEBC-40B2-8014-773BE4C2BF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6ED69D4-EEBC-40B2-8014-773BE4C2BF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C51BC4-30B1-42EC-AE23-7FE940A2189C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C51BC4-30B1-42EC-AE23-7FE940A2189C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C51BC4-30B1-42EC-AE23-7FE940A2189C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C51BC4-30B1-42EC-AE23-7FE940A2189C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

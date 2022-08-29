@@ -1,11 +1,13 @@
 ﻿class BankAccount
 {
-    public void Populate(decimal balance)
+    private long accNo;
+    private decimal accBal;
+    private AccountType accType;
+    public void Populate(long number, decimal balance)
     {
-        accNo = NextNumber();
+        accNo = number;
         accBal = balance;
         accType = AccountType.Checking;
-
     }
     public long Number()
     {
@@ -20,13 +22,4 @@
         return accType.ToString();
     }
 
-    private static long NextNumber()
-    {
-        return nextAccNo++;
-    }
-
-    private long accNo;
-    private decimal accBal;
-    private AccountType accType;
-    private static long nextAccNo = 123;
 }
