@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5FCCF2A-EFCF-46AF-8BF6-31B60FAF1E15}</ProjectGuid>
+    <ProjectGuid>{A86D4BF7-1E8F-4CEC-8EC0-545EA0399DFA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ITMO.CSCourse2022.Excercise1</RootNamespace>
-    <AssemblyName>ITMO.CSCourse2022.Excercise1</AssemblyName>
+    <RootNamespace>ITMO.CSCourse2022.Lab5.Exercise1</RootNamespace>
+    <AssemblyName>ITMO.CSCourse2022.Lab5.Exercise1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

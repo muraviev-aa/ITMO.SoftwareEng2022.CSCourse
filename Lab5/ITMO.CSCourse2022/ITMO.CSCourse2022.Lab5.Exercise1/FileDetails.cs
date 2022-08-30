@@ -1,25 +1,22 @@
 ﻿using System;
-using System.IO;             // FileStream, FileReader
+using System.IO;
 
 class FileDetails
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine(args.Length);
-        //foreach(string arg in args)
-        //    Console.WriteLine(arg);
         string fileName = args[0];
         FileStream stream = new FileStream(fileName, FileMode.Open);
         StreamReader reader = new StreamReader(stream);
         int size = (int)stream.Length;
         char[] contents = new char[size];
 
-        for(int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++)
         {
             contents[i] = (char)reader.Read();
         }
 
-        foreach(char c in contents)
+        foreach (char c in contents)
         {
             Console.WriteLine(c);
         }
@@ -54,5 +51,5 @@ class FileDetails
         Console.WriteLine("Total no lines: {0}", lines);
     }
 
-    
+
 }
