@@ -3,7 +3,6 @@ using System;
 
 class CreateAccount
 {
-    // Test Harness
     static void Main()
     {
         BankAccount acc1, acc2, acc3, acc4;
@@ -35,7 +34,7 @@ class CreateAccount
         Console.WriteLine("Account balance is {0}", acc.Balance());
         Console.WriteLine("Account type is {0}", acc.Type());
         Console.WriteLine("Transactions: ");
-        foreach(BankTransaction tran in acc.Transactions())
+        foreach (BankTransaction tran in acc.Transactions())
         {
             Console.WriteLine("Date/Time: {0}\tAmount: {1}", tran.When(), tran.Amount());
         }

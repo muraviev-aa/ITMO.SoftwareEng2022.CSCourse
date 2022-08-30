@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("ITMO.CSCourse2022.Lab8.Excercise1")]
+[assembly: AssemblyTitle("ITMO.CSCourse2022.Lab8.Exercise2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ITMO.CSCourse2022.Lab8.Excercise1")]
+[assembly: AssemblyProduct("ITMO.CSCourse2022.Lab8.Exercise2")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("0457dc7e-4677-4769-8e10-b30fce0dc81c")]
+[assembly: Guid("ad0923ac-315e-463c-ae8c-1c7ea111d49a")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
