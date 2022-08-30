@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C77C1395-E4D8-4058-80A8-F530C8C72E56}</ProjectGuid>
+    <ProjectGuid>{669B48F5-9028-4963-AFFA-1AF540AAB113}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ITMO.CSCourse2022.Divider</RootNamespace>
-    <AssemblyName>ITMO.CSCourse2022.Divider</AssemblyName>
+    <RootNamespace>ITMO.CSCourse2022.Lab1.Exercise4</RootNamespace>
+    <AssemblyName>ITMO.CSCourse2022.Lab1.Exercise4</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Divider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

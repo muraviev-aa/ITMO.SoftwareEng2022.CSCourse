@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ITMO.CSCourse2022.Greetings
+
+namespace ITMO.CSCourse2022.Lab1.Exercise1
 {
-    class Program
+    internal class Greetings
     {
         static void Main(string[] args)
         {
@@ -14,7 +11,7 @@ namespace ITMO.CSCourse2022.Greetings
 
             Console.WriteLine("Please enter your name");
             myName = Console.ReadLine();
-            Console.WriteLine("Hellow {0}" , myName);
+            Console.WriteLine("Hellow {0}", myName);
         }
     }
 }

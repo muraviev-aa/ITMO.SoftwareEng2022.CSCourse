@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ITMO.CSCourse2022.Divider
+
+namespace ITMO.CSCourse2022.Lab1.Exercise4
 {
-    class Program
+    internal class Divider
     {
         static void Main(string[] args)
         {
-           try
+            try
             {
                 Console.WriteLine("Please enter the first integer");
                 string temp = Console.ReadLine();
@@ -21,12 +18,14 @@ namespace ITMO.CSCourse2022.Divider
                 int j = Int32.Parse(temp);
 
                 int k = i / j;
-                Console.WriteLine("The result of dividing {0} by {1} is {2}", i, j, k);
+                Console.WriteLine("Result of deviding {0} by {1} is {2}", i, j, k);
+
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine("An exception was thrown: {0}", e);
+                Console.WriteLine("An exeption was thrown: {0}", ex);
             }
+            Console.Read();
         }
     }
 }
