@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ITMO.CSCourse2022.StructType
+
+namespace ITMO.CSCourse2022.Lab2.Exercise3
 {
-    public enum AccountType {Checking, Deposit}
+    public enum AccountType { Checking, Deposit }
     public struct BankAccount
     {
         public long accNo;
@@ -15,12 +12,12 @@ namespace ITMO.CSCourse2022.StructType
     }
     class Struct
     {
-        static void Main(string[] args)
+        static void Main()
         {
             BankAccount goldAccount;
 
             goldAccount.accType = AccountType.Checking;
-            goldAccount.accBal = (decimal) 3200.00;
+            goldAccount.accBal = (decimal)3200.00;
 
             Console.Write("Enter account number: ");
             goldAccount.accNo = long.Parse(Console.ReadLine());
