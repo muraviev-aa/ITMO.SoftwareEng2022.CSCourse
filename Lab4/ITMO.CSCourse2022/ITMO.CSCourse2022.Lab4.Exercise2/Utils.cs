@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ITMO.CSCourse2022.Utils
+namespace Utils
 {
-    class Utils
+    public class Utils
     {
         public static int Greater(int a, int b)
         {
@@ -15,6 +11,7 @@ namespace ITMO.CSCourse2022.Utils
             else
                 return b;
         }
+
         public static void Swap(ref int a, ref int b)
         {
             int temp = a;
