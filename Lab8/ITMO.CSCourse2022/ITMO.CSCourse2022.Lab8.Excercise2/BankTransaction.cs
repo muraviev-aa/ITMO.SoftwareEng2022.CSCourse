@@ -10,7 +10,6 @@ public class BankTransaction
         amount = tranAmount;
         when = DateTime.Now;
     }
-
     public decimal Amount()
     {
         return amount;
@@ -21,4 +20,3 @@ public class BankTransaction
         return when;
     }
 }
-
