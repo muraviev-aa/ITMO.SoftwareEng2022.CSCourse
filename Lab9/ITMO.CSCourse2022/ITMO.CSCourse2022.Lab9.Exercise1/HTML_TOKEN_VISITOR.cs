@@ -1,19 +1,15 @@
-
+﻿
 namespace CSharp
-{ 
+{
     using System;
-    
+
     public sealed class HTMLTokenVisitor : ITokenVisitor
     {
-        public void Visit(IDirectiveToken token)
-        {
-            SpannedFilteredWrite("directive", token);
-        }
         public void Visit(ILineStartToken line)
         {
-            Console.Write("<span class=\"line.Number\">");
+            Console.Write("<span class=\"line_number\">");
             Console.Write("{0,3}", line.Number());
-            Console.Write("</span");
+            Console.Write("</span>");
         }
         public void Visit(ILineEndToken t)
         {
@@ -25,7 +21,7 @@ namespace CSharp
         }
         public void Visit(ICommentToken token)
         {
-            SpannedFilteredWrite("comment", token);
+            SpannedFilteredWrite("commend", token);
         }
         public void Visit(IKeywordToken token)
         {
@@ -39,28 +35,21 @@ namespace CSharp
         {
             FilteredWrite(token);
         }
+
         private void FilteredWrite(IToken token)
         {
             string src = token.ToString();
-            for (int i = 0; i != src.Length; i++)
+            for(int i = 0; i != src.Length; i++)
             {
                 string dst;
-                switch (src[i])
+                switch(src[i])
                 {
-                    case '<':
-                        dst = "&lt;";
-                        break;
-                    case '>':
-                        dst = "&gt;";
-                        break;
-                    case '&':
-                        dst = "&amp;";
-                        break;
-                    default:
-                        dst = new string(src[i], 1);
-                        break;
+                    case '<': dst = "&lt;"; break;
+                    case '>': dst = "&gt;"; break;
+                    case '&': dst = "&amp;"; break;
+                    default: dst = new string(src[i], 1); break;
                 }
-                Console.Write(dst);
+                Console.WriteLine(dst);
             }
         }
         private void SpannedFilteredWrite(string spanName, IToken token)
@@ -69,6 +58,9 @@ namespace CSharp
             FilteredWrite(token);
             Console.Write("</span>");
         }
-        
+        public void Visit(IDirectiveToken token)
+        {
+            SpannedFilteredWrite("directive", token);
+        }
     }
 }

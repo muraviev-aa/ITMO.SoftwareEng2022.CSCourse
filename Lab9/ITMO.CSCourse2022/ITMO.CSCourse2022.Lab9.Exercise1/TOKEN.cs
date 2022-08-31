@@ -1,4 +1,4 @@
-
+﻿
 namespace CSharp
 {
     /// <summary>
@@ -15,7 +15,7 @@ namespace CSharp
     /// }
     /// </code>
     /// </summary>
-    
+
     internal abstract class Token : IToken
     {
         /// <param name="begin">begin</param>
@@ -32,7 +32,7 @@ namespace CSharp
             this.begin = begin;
             this.end = end;
         }
-    
+
         public override string ToString()
         {
             return Position.MakeString(begin, end);
@@ -44,9 +44,9 @@ namespace CSharp
         /// public interface hierarchy. That is, Accept
         /// is method of Token but not of IToken.
         /// </remarks>
-        
+
         internal abstract void Accept(ITokenVisitor visitor);
-                
+
         private readonly Position begin, end;
     }
 }

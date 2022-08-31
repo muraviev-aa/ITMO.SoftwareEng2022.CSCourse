@@ -1,13 +1,13 @@
-
+﻿
 namespace CSharp
 {
     internal sealed class MultiLineComment
     {
         internal static bool Match(Position begin, Position end)
         {
-            return (end - begin >= 2 && Utility.Equal(begin, begin+2, "/*"));
+            return (end - begin >= 2 && Utility.Equal(begin, begin + 2, "/*"));
         }
-        
+
         internal static Position Eat(Position begin, Position end)
         {
             // It is tempting to think you can make this
@@ -17,16 +17,16 @@ namespace CSharp
             // If you do this the caller won't be able to
             // tell if the comment was closed when the end
             // of the line was reached.
-            
+
             return Utility.AdjacentFind(begin, end, starForwardSlash);
         }
 
-        internal static 
-        ICommentToken MakeToken(Position begin, Position end) 
-        { 
-            return new MultiLineCommentToken(begin, end); 
+        internal static
+        ICommentToken MakeToken(Position begin, Position end)
+        {
+            return new MultiLineCommentToken(begin, end);
         }
-        
+
         private sealed class MultiLineCommentToken : Token, ICommentToken
         {
             internal MultiLineCommentToken(Position begin, Position end)
@@ -40,7 +40,7 @@ namespace CSharp
             }
         }
 
-        private static readonly StarForwardSlash starForwardSlash 
+        private static readonly StarForwardSlash starForwardSlash
             = new StarForwardSlash();
 
         private sealed class StarForwardSlash : Utility.IPredicate2
@@ -50,7 +50,7 @@ namespace CSharp
                 return previous == '*' && current == '/';
             }
         }
-        
-        private MultiLineComment() {}
+
+        private MultiLineComment() { }
     }
 }

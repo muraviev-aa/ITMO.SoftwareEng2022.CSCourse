@@ -1,6 +1,6 @@
-
+﻿
 namespace CSharp
-{    
+{
     internal sealed class LineEnd
     {
         internal sealed class Token : ILineEndToken
@@ -9,19 +9,19 @@ namespace CSharp
             {
                 this.number = number;
             }
-         
-            public static Token operator++(Token t)
+
+            public static Token operator ++(Token t)
             {
                 t.number++;
                 return t;
             }
-            
+
             int ILineEndToken.Number()
             {
-                return number; 
+                return number;
             }
-            
-            private int number;   
+
+            private int number;
         }
     }
 }

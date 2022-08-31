@@ -1,4 +1,4 @@
-
+﻿
 namespace CSharp
 {
     using Ctype = System.Char;
@@ -8,7 +8,7 @@ namespace CSharp
     /// syntax that allows a @ character to prefix 
     /// an identifier.
     /// </remarks>
-       
+
     internal sealed class Identifier
     {
         /// <summary>
@@ -19,16 +19,17 @@ namespace CSharp
         /// </summary>        
         /// <param name="begin">begin</param>
         /// <param name="end">end</param>
-        
+
         internal static bool Match(Position begin, Position end)
         {
-            if (begin == end) {
+            if (begin == end)
+            {
                 return false;
             }
             char read = begin.Get();
             return Ctype.IsLetter(read) || read == '_';
         }
-        
+
         /// <summary>
         /// Eat is a static method that eats the identifier
         /// token assumed to start at 
@@ -59,10 +60,10 @@ namespace CSharp
         /// <param name="begin">begin</param>
         /// <param name="end">end</param>        
 
-        internal static 
-        IIdentifierToken MakeToken(Position begin, Position end) 
-        { 
-            return new IdentifierToken(begin, end); 
+        internal static
+        IIdentifierToken MakeToken(Position begin, Position end)
+        {
+            return new IdentifierToken(begin, end);
         }
 
         private sealed class IdentifierToken : Token, IIdentifierToken
@@ -71,7 +72,7 @@ namespace CSharp
               : base(begin, end)
             {
             }
-        
+
             internal override void Accept(ITokenVisitor visitor)
             {
                 visitor.Visit(this);
@@ -80,17 +81,17 @@ namespace CSharp
 
         private static readonly NotIdentifier notIdentifier
             = new NotIdentifier();
-            
+
         private sealed class NotIdentifier : Utility.IPredicate1
         {
             public bool Execute(char current)
             {
-                return !(Ctype.IsLetter(current) 
+                return !(Ctype.IsLetter(current)
                       || Ctype.IsDigit(current)
                       || current == '_');
             }
         }
-        
-        private Identifier() {}
+
+        private Identifier() { }
     }
 }
