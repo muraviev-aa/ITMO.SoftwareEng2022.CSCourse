@@ -1,47 +1,76 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Collections;
 
-    sealed public class BankAccount : IDisposable
+namespace Banking
+{
+    class BankAccount : IDisposable
     {
         private long accNo;
         private decimal accBal;
         private AccountType accType;
+        private static long nextAccNo = 123;
         private Queue tranQueue = new Queue();
         private bool disposed = false;
 
-        private static long nextNumber = 123;
-
-        // Constructors
         internal BankAccount()
         {
-            accNo = NextNumber();
-            accType = AccountType.Checking;
+            accNo = NextAccNo();
             accBal = 0;
-        }
-
-        internal BankAccount(AccountType aType)
-        {
-            accNo = NextNumber();
-            accType = aType;
-            accBal = 0;
-        }
-
-        internal BankAccount(decimal aBal)
-        {
-            accNo = NextNumber();
             accType = AccountType.Checking;
-            accBal = aBal;
         }
 
-        internal BankAccount(AccountType aType, decimal aBal)
+        internal BankAccount(AccountType assignType)
         {
-            accNo = NextNumber();
-            accType = aType;
-            accBal = aBal;
+            accNo = NextAccNo();
+            accBal = 0;
+            accType = assignType;
         }
 
-        // Dispose Method
+        internal BankAccount(decimal assignBalance)
+        {
+            accNo = NextAccNo();
+            accBal = assignBalance;
+            accType = AccountType.Checking;
+        }
+
+        internal BankAccount(AccountType assignType, decimal assignBalance)
+        {
+            accNo = NextAccNo();
+            accBal = assignBalance;
+            accType = assignType;
+        }
+
+        public static long NextAccNo()
+        {
+            return nextAccNo++;
+        }
+
+        public decimal Deposit(decimal amount)
+        {
+            accBal = accBal + amount;
+            BankTransaction tran = new BankTransaction(amount);
+            tranQueue.Enqueue(tran);
+            return accBal;
+        }
+        public bool Withdraw(decimal amount)
+        {
+            bool sufficientFunds = accBal >= amount;
+            if (sufficientFunds)
+            {
+                accBal = accBal - amount;
+                BankTransaction tran = new BankTransaction(-amount);
+                tranQueue.Enqueue(tran);
+            }
+            return sufficientFunds;
+        }
+        public void TransferFrom(BankAccount accFrom, decimal amount)
+        {
+            if (accFrom.Withdraw(amount))
+            {
+                this.Deposit(amount);
+            }
+        }
 
         public void Dispose()
         {
@@ -56,32 +85,10 @@ using System.Collections;
                 {
                     swFile.WriteLine("Date/Time: {0}\tAmount: {1}", tran.When(), tran.Amount());
                 }
-
                 swFile.Close();
                 disposed = true;
                 GC.SuppressFinalize(this);
             }
-        }
-
-        public bool Withdraw(decimal amount)
-        {
-            bool sufficientFunds = accBal >= amount;
-            if (sufficientFunds)
-            {
-                accBal -= amount;
-                BankTransaction tran = new BankTransaction(-amount);
-                tranQueue.Enqueue(tran);
-            }
-
-            return sufficientFunds;
-        }
-
-        public decimal Deposit(decimal amount)
-        {
-            accBal += amount;
-            BankTransaction tran = new BankTransaction(amount);
-            tranQueue.Enqueue(tran);
-            return accBal;
         }
 
         public Queue Transactions()
@@ -93,20 +100,13 @@ using System.Collections;
         {
             return accNo;
         }
-
         public decimal Balance()
         {
             return accBal;
         }
-
         public string Type()
         {
             return accType.ToString();
-        }
-
-        private static long NextNumber()
-        {
-            return nextNumber++;
         }
 
         ~BankAccount()
@@ -114,3 +114,4 @@ using System.Collections;
             Dispose();
         }
     }
+}

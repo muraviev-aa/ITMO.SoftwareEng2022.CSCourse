@@ -1,10 +1,8 @@
-
-    using System;
-    using System.IO;
+﻿using System;
 
 namespace Banking
 {
-    internal class BankTransaction
+    class BankTransaction
     {
         private readonly decimal amount;
         private readonly DateTime when;
@@ -14,7 +12,6 @@ namespace Banking
             amount = tranAmount;
             when = DateTime.Now;
         }
-
         public decimal Amount()
         {
             return amount;
@@ -24,6 +21,9 @@ namespace Banking
         {
             return when;
         }
+
     }
+
 }
+
 
