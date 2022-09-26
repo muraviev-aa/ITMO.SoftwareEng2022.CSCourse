@@ -29,8 +29,8 @@
 <strong>8. &#128194; Lab8. </strong>
 Упражнения 1, 2. 
 
-<strong>9. &#128194; Lab2. </strong>
+<strong>9. &#128194; Lab9. </strong>
 Упражнение 1. 
 
-<strong>10. &#128194; Lab2. </strong>
+<strong>10. &#128194; Lab10. </strong>
 Упражнения 1, 2. 
