@@ -1,6 +1,6 @@
 ## ITMO.SoftwareEng2022.CSCourse ##     
 
-<img src="https://www.mustafaakbal.com.tr/wp-content/uploads/2018/01/csh1.png">
+<img src="https://ie.wampi.ru/2022/09/26/76.jpg" alt="drawing" width="200"/>
 
 ### ИТМО 2022. Программирование на Microsoft C# ###
 ***Состав репозитория:***
