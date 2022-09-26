@@ -1,4 +1,4 @@
-## ITMO.SoftwareEng2022.CSCourse ## <img src="https://cloud.mail.ru/public/Sg3R/x4mdVxfSb">
+## ITMO.SoftwareEng2022.CSCourse ##     
 
 <img src="https://www.mustafaakbal.com.tr/wp-content/uploads/2018/01/csh1.png">
 
