@@ -1,8 +1,8 @@
-## ITMO.SoftwareEng2022.CSCourse ##     
+## ITMO.SoftwareEng2022.CSCourse
+### ИТМО 2022. Программирование на Microsoft C#
 
 <img src="https://im.wampi.ru/2022/09/26/100.jpg" alt="drawing" width="200"/>
 
-### ИТМО 2022. Программирование на Microsoft C# ###
 ***Состав репозитория:***
 
  <strong>1. &#128194; Lab1. </strong>
