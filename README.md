@@ -4,7 +4,9 @@
 <a name="readme-top"></a>
 ### ИТМО 2022. Программирование на Microsoft C#
 
+<p align="center">
 <img src="https://im.wampi.ru/2022/09/26/100.jpg" alt="drawing" width="200"/>
+</p>
 
 ***Состав репозитория:***
 
