@@ -1,7 +1,12 @@
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
 ## ITMO.SoftwareEng2022.CSCourse
+<a name="readme-top"></a>
 ### ИТМО 2022. Программирование на Microsoft C#
 
-<img src="https://im.wampi.ru/2022/09/26/100.jpg" alt="drawing" width="200"/>
+<p align="center">
+<img src="images/C#.jpg" alt="drawing" width="350"/>
+</p>
 
 ***Состав репозитория:***
 
@@ -46,3 +51,5 @@
 <strong>10. &#128194; Lab10. Использование модификатора доступа internal и создание сборок. </strong>
 * Упражнение 1. Создание класса с модификатором internal;
 * Упражнение 2. Организация классов в сборку.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
