@@ -5,7 +5,7 @@
 ### ИТМО 2022. Программирование на Microsoft C#
 
 <p align="center">
-<img src="images/C#.jpg" alt="drawing" width="350"/>
+<img src="images/csh.png" alt="drawing" width="350"/>
 </p>
 
 ***Состав репозитория:***
